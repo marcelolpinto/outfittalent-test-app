@@ -13,7 +13,6 @@ export type LaunchListQuery = {
             launch_date_utc?: string | null,
             launch_success: boolean,
             upcoming: boolean,
-            tbd: boolean,
         } | null
     > | null
 };

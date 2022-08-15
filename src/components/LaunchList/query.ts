@@ -10,7 +10,6 @@ export const QUERY_LAUNCH_LIST = gql`
       launch_year
       mission_name
       upcoming
-      tbd
     }
   }
 `;

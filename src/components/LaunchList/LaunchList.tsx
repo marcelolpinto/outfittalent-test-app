@@ -42,10 +42,6 @@ const LaunchList = ({ data }: Props) => (
 
           const status = getStatus(launch.launch_success, launch.upcoming);
 
-          if (launch.tbd === true) {
-            console.log(launch)
-          }
-
           return (
             <li key={`launch-${i}`} className={`${className}__item`}>
               <h2>{launch.mission_name}</h2>
