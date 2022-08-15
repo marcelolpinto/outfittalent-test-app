@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { LaunchListQuery } from './hook';
+import { LaunchListQuery } from '../../types/queries';
 import './styles.css';
 
 interface Props {
@@ -49,7 +49,7 @@ const LaunchList = ({ data }: Props) => (
                 <p>{launch.details}</p>
               )}
               {launch.launch_date_utc && (
-                <p><b>Launch Date:</b> {new Date(launch.launch_date_utc).toLocaleDateString()}</p>
+                <p><b>Launch Date:</b> {new Date(launch.launch_date_utc).toString()}</p>
               )}
               <p className={`status -${status}`}><b>Status:</b> {StatusLabels[status]}</p>
             </li>
