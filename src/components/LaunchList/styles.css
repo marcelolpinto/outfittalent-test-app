@@ -1,0 +1,51 @@
+.LaunchList {
+    overflow: hidden auto;
+    background-color: #ececec;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+.LaunchList__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.LaunchList__item {
+    padding: 28px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+    background-color: #FFF;
+}
+  
+.LaunchList__item:last-child {
+    margin-bottom: 0;
+}
+  
+.LaunchList__item p.status {
+    display: inline-block;
+    margin: 0;
+}
+  
+.LaunchList__item p.status::after {
+    content: '';
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(3px);
+    margin-left: 4px;
+}
+  
+.LaunchList__item p.status.-UPCOMING::after {
+    background-color: #CC0;
+}
+  
+.LaunchList__item p.status.-SUCCESS::after {
+    background-color: #0C0;
+}
+  
+.LaunchList__item p.status.-FAILED::after {
+    background-color: #C00;
+}
