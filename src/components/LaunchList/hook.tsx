@@ -18,5 +18,5 @@ export type LaunchListQuery = {
 };
 
 export const useLaunchListQuery = () => {
-	return Apollo.useQuery(QUERY_LAUNCH_LIST, {});
+	return Apollo.useQuery(QUERY_LAUNCH_LIST);
 }
